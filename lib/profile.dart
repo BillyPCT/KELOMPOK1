@@ -49,7 +49,7 @@ class Profile extends StatelessWidget {
               color: Colors.grey[400],
               thickness: 1,
             ),
-            Container(
+            Container(              
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 children: [
@@ -58,14 +58,26 @@ class Profile extends StatelessWidget {
                     leading: Icon(Icons.email),
                     title: Text('zooaps.com'),
                   ),
+                   Divider(
+                   color: Colors.grey[400],
+                   thickness: 1,
+                   ),
                   ListTile(
                     leading: Icon(Icons.phone),
                     title: Text('+62 123456789'),
                   ),
+                   Divider(
+                   color: Colors.grey[400],
+                   thickness: 1,
+                   ),
                   ListTile(
                     leading: Icon(Icons.location_on),
                     title: Text('Indonesia'),
                   ),
+                   Divider(
+                   color: Colors.grey[400],
+                   thickness: 1,
+                   ),
                 ],
               ),
             ),
@@ -74,7 +86,8 @@ class Profile extends StatelessWidget {
               onPressed: () {
                 Navigator.pop(context, 'kembali ke beranda');
               },
-              child: Text("Kembali"),
+              child: 
+              Text("Kembali"),
             ),
             SizedBox(height: 20),
           ],
