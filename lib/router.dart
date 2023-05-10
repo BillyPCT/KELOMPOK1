@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:tugaspertama/Classhewan/Mamalia.dart';
+import 'package:tugaspertama/Classhewan/amphibi.dart';
+import 'package:tugaspertama/Classhewan/reptile.dart';
+import 'package:tugaspertama/news.dart';
 import 'package:tugaspertama/profile.dart';
 import 'package:tugaspertama/slideroutezoo.dart';
 
-import 'Secondscreen.dart';
-import 'fourthslidezoo.dart';
+
+
 
 
 
@@ -13,17 +17,23 @@ class RouteGenerator{
     var uri = Uri.parse(settings.name!);
     switch (settings.name) {
       
-    case '/fourth':
+    case '/Berita':
         //return MaterialPageRoute(builder: (_) => FourthScreen());
-        return SlideRightRoute(widget: FourthScreen());
+        return SlideRightRoute(widget: Berita());
+        case '/mamalia':
+        return SlideRightRoute(widget: mamalia());
+         case '/reptile':
+        return SlideRightRoute(widget: reptile());
+         case '/amphibi':
+        return SlideRightRoute(widget: amphibi());
+        case '/Unggas':
+        return SlideRightRoute(widget: amphibi());
+        case '/burung':
+        return SlideRightRoute(widget: amphibi());
          case '/profiles':
-        //return MaterialPageRoute(builder: (_) => FourthScreen());
         return SlideRightRoute(widget: Profile()); 
-      case '/secondary':
-        if(args is String){
-          return MaterialPageRoute(builder: (_) => SecondScreen(data: args));
-        }
-        return _errorRoute();
+      
+       
       default:
         return _errorRoute();
     }

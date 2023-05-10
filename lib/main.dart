@@ -1,8 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'launcherzoo.dart';
-import 'package:flutter/material.dart';
-import 'package:tugaspertama/berandazoo.dart';
+
 import 'package:tugaspertama/router.dart';
 
 void main() {

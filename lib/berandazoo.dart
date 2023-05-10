@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'Secondscreen.dart';
-
 class berandazoo extends StatelessWidget {
   const berandazoo({super.key});
 
@@ -9,6 +6,7 @@ class berandazoo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+      
         title: Text("HALAMAN BERANDA ZOO",),
         backgroundColor: Colors.amber,
         actions: [
@@ -27,21 +25,13 @@ class berandazoo extends StatelessWidget {
           children: [
             ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/fourth'); //ssss
+                  Navigator.pushNamed(context, '/Berita'); //ssss
                 },
-                child: Text('Menuju Layar Keempat dengan animasi')),
+                child: Text('Menuju ke layar kelas hewan')),
             SizedBox(
               height: 15,
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              SecondScreen(data: 'Helo from First Screen')));
-                },
-                child: Text("Menuju Ke Layar Kedua")),
+           
           ],
         ),
       ),
